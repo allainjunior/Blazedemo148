@@ -11,6 +11,8 @@ class HomePage{
         await this.page.locator(this.origem).selectOption(origem)
         await this.page.locator(this.destino).selectOption(destino)
         await this.page.locator(this.btnFindFlights).click()
-        
+
     }
 }
+
+export default HomePage
