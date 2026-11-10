@@ -2,7 +2,7 @@ class PurchasePage {
 
     constructor(page){
         this.page = page
-        this.url = 'purchase'
+        this.url = /purchase/
         this.titulosecao = 'h2'
         this.name = '#inputName'
         this.cardType = '[name="cardType"]'
@@ -15,7 +15,7 @@ class PurchasePage {
     }
  
     async selecionar_bandeira(bandeira) {
-        await this.page.locator(this.cardtype).selectOption(bandeira)
+        await this.page.locator(this.cardType).selectOption(bandeira)
     }
  
     async lembrar_de_mim() {
